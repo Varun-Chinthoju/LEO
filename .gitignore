@@ -1,0 +1,17 @@
+# Build output & dependencies
+.build/
+.venv/
+.codex/
+dist/
+
+# macOS
+.DS_Store
+*.swp
+*~
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Local runtime logs / artifacts
+*.log

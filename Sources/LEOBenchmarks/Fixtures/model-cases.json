@@ -1,0 +1,22 @@
+[
+  {"id":"open-xcode","prompt":"open Xcode","expectedShape":"tool:apps.open"},
+  {"id":"open-this","prompt":"open this","expectedShape":"tool:context.open"},
+  {"id":"move-this","prompt":"move this to Downloads","expectedShape":"tool:files.move"},
+  {"id":"find-pdf-earlier","prompt":"find the PDF from earlier","expectedShape":"retrieval:recent-file"},
+  {"id":"use-other","prompt":"use the other one","expectedShape":"referent:alternate"},
+  {"id":"trash-this","prompt":"trash this","expectedShape":"confirmation:quarantine"},
+  {"id":"undo-that","prompt":"undo that","expectedShape":"tool:quarantine.undo"},
+  {"id":"next-calendar","prompt":"what is next on my calendar?","expectedShape":"integration:calendar.next"},
+  {"id":"open-safari","prompt":"open Safari","expectedShape":"tool:apps.open"},
+  {"id":"open-downloads","prompt":"open Downloads","expectedShape":"tool:files.open"},
+  {"id":"move-report","prompt":"move Report.pdf to Desktop","expectedShape":"tool:files.move"},
+  {"id":"find-screenshot","prompt":"find the screenshot I just saved","expectedShape":"retrieval:recent-file"},
+  {"id":"rename-this","prompt":"rename this to final report","expectedShape":"tool:files.rename"},
+  {"id":"delete-confirm","prompt":"delete this file","expectedShape":"confirmation:quarantine"},
+  {"id":"restore-last","prompt":"restore the last item","expectedShape":"tool:quarantine.undo"},
+  {"id":"calendar-tomorrow","prompt":"what do I have tomorrow?","expectedShape":"integration:calendar.day"},
+  {"id":"open-terminal","prompt":"open Terminal","expectedShape":"tool:apps.open"},
+  {"id":"show-folder","prompt":"show this folder in Finder","expectedShape":"tool:files.reveal"},
+  {"id":"other-file","prompt":"open the other file","expectedShape":"referent:alternate"},
+  {"id":"follow-up","prompt":"move it to Documents","expectedShape":"tool:files.move"}
+]
