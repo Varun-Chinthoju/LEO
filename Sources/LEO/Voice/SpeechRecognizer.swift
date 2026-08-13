@@ -23,12 +23,11 @@ protocol ParakeetTranscriptionCommand: Sendable {
 /// MLX runtime. The command is injected so model execution stays replaceable
 /// and deterministic in tests.
 struct ParakeetSpeechRecognizer: SpeechRecognizer {
-    // The 110M English checkpoint is substantially smaller than the 0.6B
-    // multilingual model and is a better latency/memory fit for short voice
-    // commands. Keep the larger model available as an environment override
-    // for users who need its broader language coverage.
+    // Prefer the larger MLX checkpoint for robust recognition of natural
+    // phrasing. The smaller 110M English model remains available through the
+    // LEO_PARAKEET_MODEL environment override when latency is the priority.
     static let defaultModel = ProcessInfo.processInfo.environment["LEO_PARAKEET_MODEL"]
-        ?? "mlx-community/parakeet-tdt_ctc-110m"
+        ?? "mlx-community/parakeet-tdt-0.6b-v3"
 
     let model: String
     let command: any ParakeetTranscriptionCommand

@@ -14,7 +14,7 @@ rm -rf "$OUTPUT_DIR"
 mkdir -p "$OUTPUT_DIR"
 
 "$ROOT_DIR/.venv/bin/parakeet-mlx" "$AUDIO_FILE" \
-  --model "${LEO_PARAKEET_MODEL:-mlx-community/parakeet-tdt_ctc-110m}" \
+  --model "${LEO_PARAKEET_MODEL:-mlx-community/parakeet-tdt-0.6b-v3}" \
   --output-format txt \
   --output-dir "$OUTPUT_DIR" \
   --output-template result
